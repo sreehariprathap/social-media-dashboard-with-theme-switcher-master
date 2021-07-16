@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media screen and (max-width: 375px) {
+  .header h3 {
+    color: rgb(0, 0, 0);
+  }
+  .header h5 {
+    color: hsl(228, 12%, 44%);
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    /* line-height: 0.11rem; */
+    padding: 1.5rem;
+  }
+  .dark {
+    color: hsl(228, 12%, 44%);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  .line {
+    background-color: black;
+    border: solid 0.3px black;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    opacity: 0.3;
+  }
+  .nathan {
+    background-color: hsl(227, 47%, 96%);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    margin: 0rem 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border-top-style: solid;
+    border-top-color: hsl(208, 92%, 53%);
+    border-top-width: 6px;
+    margin-bottom: 1rem;
+  }
+  .insta {
+    border-top-color: rgb(255, 169, 41);
+  }
+  .yt {
+    border-top-color: rgb(190, 2, 2);
+  }
+  .nathan h1 {
+    font-size: 4rem;
+  }
+  .nathan p:nth-child(4) {
+    margin-top: 1.3rem;
+    color: hsl(163, 72%, 41%);
+    font-weight: 700;
+  }
+  .yt p:nth-child(4) {
+    color: rgb(180, 34, 29);
+  }
+  .nathan p:nth-child(3) {
+    font-weight: 200;
+    letter-spacing: 3px;
+  }
+  .logo {
+    display: flex;
+  }
+  .logo img {
+    margin-right: 0.5rem;
+  }
+  .toggle {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: hsl(230, 22%, 74%);
+    border-radius: 30px;
+    border: none;
+  }
+
+  /* After slide changes */
+  .toggle:after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    top: 1px;
+    left: 1px;
+    transition: all 0.5s;
+  }
+  .checkbox:checked + .toggle::after {
+    left: 26px;
+  }
+
+  /* Checkbox checked toggle label bg color */
+  .checkbox:checked + .toggle {
+    background: linear-gradient(to top, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+
+  /* Checkbox vanished */
+  .checkbox {
+    display: none;
+  }
+
+  .overview {
+    color: hsl(228, 12%, 44%);
+
+    padding: 1rem;
+  }
+  .view {
+    margin-top: 1.5rem;
+    background-color: hsl(227, 47%, 96%);
+    height: 130px;
+    border-radius: 0.3rem;
+    padding: 1rem;
+  }
+  .tooo {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .tooo p {
+    color: hsl(228, 12%, 44%);
+  }
+  .bot {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  .bot p {
+    padding-top: 15px;
+    color: hsl(163, 72%, 41%);
+    font-weight: 600;
+  }
+  .red p {
+    color: rgb(190, 2, 2);
+  }
+
+  .background_night {
+    background-color: hsl(230, 17%, 14%);
+  }
+  .night_header h3 {
+    color: #fff;
+  }
+  .night_header {
+    background-color: rgb(29, 33, 51);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+  }
+  .night_line {
+    background-color: #b4b4b4;
+    border: solid 0.3px #b9b9b9;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    opacity: 0.3;
+  }
+  .night_nath {
+    background-color: hsl(228, 28%, 20%);
+  }
+  .night_nath p {
+    color: hsl(228, 12%, 44%);
+  }
+  .night_nath h1 {
+    color: #fff;
+  }
+  .night_view {
+    background-color: hsl(228, 28%, 20%);
+  }
+  .night_view h1 {
+    color: #fff;
+  }
+  .night_overview {
+    color: #fff;
+  }
+}
+@media screen and (min-width: 769px) {
+}
