@@ -6,6 +6,10 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 @media screen and (max-width: 375px) {
+  .background_night {
+    background: linear-gradient(#011030, hsl(230, 17%, 14%));
+    height: 100%;
+  }
   .container {
     background: linear-gradient();
   }
@@ -150,7 +154,7 @@
   }
 
   .background_night {
-    height: 100vh;
+    /* height: 100vh; */
     background-color: hsl(230, 17%, 14%);
   }
   .night_top_bar {
@@ -197,7 +201,7 @@
 }
 
 @media screen and (min-width: 376px) {
-  .container {
+  .background_night {
     background: linear-gradient(#011030, hsl(230, 17%, 14%));
   }
   .top_bar {
