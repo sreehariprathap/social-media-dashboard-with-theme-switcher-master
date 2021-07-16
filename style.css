@@ -6,6 +6,9 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 @media screen and (max-width: 375px) {
+  .container {
+    background: linear-gradient();
+  }
   .header h3 {
     color: rgb(0, 0, 0);
   }
@@ -194,6 +197,9 @@
 }
 
 @media screen and (min-width: 376px) {
+  .container {
+    background: linear-gradient(#011030, hsl(230, 17%, 14%));
+  }
   .top_bar {
     display: flex;
     justify-content: space-between;
@@ -215,6 +221,9 @@
   }
 
   .followers {
+    background: rgba(255, 255, 255, 0);
+    transition: ease 0.5s;
+    border-radius: 15px;
     display: grid;
     gap: 20px;
     grid-template-areas: "A B C D";
@@ -225,9 +234,13 @@
     /* padding-left: 3rem;
     padding-right: 3rem; */
     margin: 1rem 4rem 1rem 4rem;
+    padding-left: 1rem;
   }
   .followers:hover {
-    border: 1px solid rgba(white, white, white);
+    background: rgba(255, 255, 255, 0.041);
+
+    /* border: 1px solid rgba(255, 255, 255, 0.404); */
+    transition: ease 0.5s;
   }
   .card_1 {
     grid-area: A;
@@ -240,6 +253,22 @@
   }
   .card_4 {
     grid-area: D;
+  }
+  .card_1:hover {
+    transform: scale(1.2);
+    transition: ease 0.5s;
+  }
+  .card_2:hover {
+    transform: scale(1.2);
+    transition: ease 0.5s;
+  }
+  .card_3:hover {
+    transform: scale(1.2);
+    transition: ease 0.5s;
+  }
+  .card_4:hover {
+    transform: scale(1.2);
+    transition: ease 0.5s;
   }
   .nathan {
     /* flex: 1; */
@@ -332,13 +361,25 @@
     display: none;
   }
   .bottom_container {
+    background: rgba(255, 255, 255, 0);
+    transition: ease 0.5s;
+
+    padding: 1rem 0rem 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px transparent;
+    border-radius: 15px;
     display: grid;
     gap: 20px;
-    height: 50vh;
+    /* height: 50vh; */
 
     grid-template-areas:
       "A B C D"
       "E F G H";
+  }
+  .bottom_container:hover {
+    background: rgba(255, 255, 255, 0.041);
+    /* border: 1px solid rgba(255, 255, 255, 0.404); */
+    transition: ease 0.5s;
   }
   .box_1 {
     grid-area: A;
